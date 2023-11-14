@@ -6,8 +6,6 @@ public class TestDeConnection {
     public static void main(String... args){
         Connection conn = null;
         try {
-            //Seulement avant Java 7/JDBC 4
-            //Class.forName(DRIVER_CLASS_NAME);
 
             //MySQL driver MySQL Connector
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/tennis","homedeve","root");
@@ -38,7 +36,7 @@ public class TestDeConnection {
              statement.close();*/
 
             //Requettes préparés
-
+            /*
             PreparedStatement preparedStatement = conn.prepareStatement("SELECT NOM, PRENOM, ID FROM JOUEUR WHERE ID=?");
             long identifiant = 78;
             preparedStatement.setLong(1, identifiant);
@@ -54,10 +52,24 @@ public class TestDeConnection {
             } else {
                 System.out.println("Il y'a pa d'enregidtrement d'ID 128");
             }
+            //fin requette preparés
+            */
 
 
 
+            //Insertion en BD
 
+            PreparedStatement preparedStatement = conn.prepareStatement("UPDATE JOUEUR SET NOM=?, PRENOM=?, ID  WHERE ID=?");
+            long identifiant = 1;
+            final String nom = "Djoulako";
+            final String prenom = "Camel";
+            preparedStatement.setString(1, nom);
+            preparedStatement.setString(2, prenom);
+            preparedStatement.setLong(3, identifiant);
+
+           // int  nombreEnregistrementModifier = preparedStatement.executeUpdate(); //retourne le nombre d'enregistrement modifier
+
+            
 
             System.out.println("success");
         } catch (SQLException e) {
