@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e43f690-1c46-4e1e-9b4b-41c459d1a01f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/entity/Joueur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/repository/JoueurRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/TestDeConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/TestDeConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,22 +37,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "copyright"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="TestDeConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.homedeve.tenis.core.TestDeConnection" />
+      <option name="MAIN_CLASS_NAME" value="com.homedeve.tenis.i.TestDeConnection" />
       <module name="core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.homedeve.tenis.core.*" />
+          <option name="PATTERN" value="com.homedeve.tenis.i.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,7 +92,17 @@
       <workItem from="1697269267419" duration="662000" />
       <workItem from="1698414673240" duration="596000" />
       <workItem from="1699825065635" duration="886000" />
-      <workItem from="1699977036423" duration="5509000" />
+      <workItem from="1699977036423" duration="7681000" />
+      <workItem from="1700043480902" duration="611000" />
+      <workItem from="1700125565620" duration="600000" />
+      <workItem from="1700274814004" duration="5641000" />
+      <workItem from="1700396903780" duration="229000" />
+      <workItem from="1700397151828" duration="2606000" />
+      <workItem from="1700510106707" duration="4295000" />
+      <workItem from="1700940874417" duration="604000" />
+      <workItem from="1700994185720" duration="993000" />
+      <workItem from="1701117347428" duration="6461000" />
+      <workItem from="1701649257127" duration="4849000" />
     </task>
     <servers />
   </component>
