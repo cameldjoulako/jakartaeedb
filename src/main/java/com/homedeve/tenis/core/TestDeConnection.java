@@ -2,10 +2,13 @@ package com.homedeve.tenis.core;
 
 //import org.apache.commons.dbcp2.BasicDataSource;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class TestDeConnection {
-    public static void main(String... args){
+    public static void main(String... args) {
         Connection conn = null;
         try {
 
