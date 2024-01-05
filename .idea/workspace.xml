@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e43f690-1c46-4e1e-9b4b-41c459d1a01f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/DataSourceProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/TestDeConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/TestDeConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/repository/JoueurRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/repository/JoueurRepositoryImpl.java" afterDir="false" />
     </list>
@@ -50,7 +48,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="com.homedeve.tenis.TestDeConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.homedeve.tenis.TestDeConnection" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.homedeve.tenis.TestDeConnection" />
       <module name="core" />
       <extension name="coverage">
@@ -63,11 +61,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.com.homedeve.tenis.TestDeConnection" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -109,7 +102,9 @@
       <workItem from="1702570070819" duration="2775000" />
       <workItem from="1702679831687" duration="1291000" />
       <workItem from="1703241028057" duration="2121000" />
-      <workItem from="1703249558749" duration="4044000" />
+      <workItem from="1703249558749" duration="5367000" />
+      <workItem from="1703330896080" duration="15033000" />
+      <workItem from="1704439244567" duration="779000" />
     </task>
     <servers />
   </component>
@@ -126,5 +121,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/core$com_homedeve_tenis_TestDeConnection.ic" NAME="com.homedeve.tenis.TestDeConnection Coverage Results" MODIFIED="1703662665608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.homedeve.tenis.i.*</FILTER>
+    </SUITE>
   </component>
 </project>
