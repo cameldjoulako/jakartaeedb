@@ -1,15 +1,21 @@
 package com.homedeve.tenis.core.service;
 
 import com.homedeve.tenis.core.entity.Joueur;
+import com.homedeve.tenis.core.repository.JoueurRepositoryImpl;
 
 public class JoueurService {
-    public Joueur getJoueur(long identifiant) {
-        Joueur joueur = new Joueur();
+    private JoueurRepositoryImpl joueurRepository;
+    public JoueurService(){
+        this.joueurRepository = new JoueurRepositoryImpl();
+    }
 
-        return joueur;
+    public Joueur getJoueur(long identifiant) {
+
+        return joueurRepository.getById(identifiant);
     }
 
     public void createJoueur(Joueur joueur) {
+        joueurRepository.create(joueur);
     }
 
     public void renomme(long identifiant, String nom) {

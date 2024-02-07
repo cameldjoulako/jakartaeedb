@@ -3,6 +3,7 @@ package com.homedeve.tenis.core.repository;
 import com.homedeve.tenis.core.HibernateUtil;
 import com.homedeve.tenis.core.entity.Joueur;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -11,15 +12,20 @@ import java.util.List;
 public class JoueurRepositoryImpl {
 
     public void create(Joueur joueur) {
-        Joueur joueur = null;
 
         Session session = null;
+        Transaction tx = null;
+
 
         try {
             //recuperation d'une session hibernate
             session = HibernateUtil.getSessionFactory().openSession();
-            //recuperation d'une ligne et transformation en objet
-            joueur = session.get(Joueur.class, id);
+
+            tx = session.beginTransaction();
+
+            //enregistrement en BD
+            session.persist(joueur);
+            session.flush();
             System.out.println("Joueur lu");
         }
         catch (Throwable t){

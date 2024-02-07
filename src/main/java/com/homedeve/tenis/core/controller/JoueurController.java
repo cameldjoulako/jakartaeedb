@@ -29,11 +29,13 @@ public class JoueurController {
         String prenom=scanner.nextLine();
         System.out.println("Quel est le sexe du joueur ?");
         char sexe=scanner.nextLine().charAt(0);
-        Joueur joueur=new Joueur();
+        Joueur joueur = new Joueur();
         joueur.setNom(nom);
         joueur.setPrenom(prenom);
         joueur.setSexe(sexe);
         joueurService.createJoueur(joueur);
+
+        System.out.println("Le joueur a été créer. son identifiant est: " + joueur.getId() );
     }
 
     public void renommeJoueur(){
