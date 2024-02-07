@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2e43f690-1c46-4e1e-9b4b-41c459d1a01f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/controller/JoueurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/controller/JoueurController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/repository/JoueurRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/repository/JoueurRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/service/JoueurService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/service/JoueurService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +117,7 @@
       <workItem from="1704904628796" duration="718000" />
       <workItem from="1707087539236" duration="7776000" />
       <workItem from="1707274357948" duration="6975000" />
-      <workItem from="1707307362501" duration="2171000" />
+      <workItem from="1707307362501" duration="3912000" />
     </task>
     <servers />
   </component>

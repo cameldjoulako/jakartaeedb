@@ -25,10 +25,17 @@ public class JoueurRepositoryImpl {
 
             //enregistrement en BD
             session.persist(joueur);
-            session.flush();
+
+            //session.flush(); //ou
+            tx.commit(); // Ici on laisse Hibernate de s'occuper du flush
+
             System.out.println("Joueur lu");
         }
-        catch (Throwable t){
+        catch (Exception t){
+
+            if (tx!=null) {
+                tx.rollback();
+            }
             t.printStackTrace();
         }
         finally {
