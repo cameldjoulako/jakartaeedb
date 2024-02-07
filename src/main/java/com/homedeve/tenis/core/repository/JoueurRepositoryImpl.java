@@ -1,6 +1,8 @@
 package com.homedeve.tenis.core.repository;
 
+import com.homedeve.tenis.core.HibernateUtil;
 import com.homedeve.tenis.core.entity.Joueur;
+import org.hibernate.Session;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -9,37 +11,23 @@ import java.util.List;
 public class JoueurRepositoryImpl {
 
     public void create(Joueur joueur) {
-        Connection conn = null;
-        PreparedStatement preparedStatement = null;
+        Joueur joueur = null;
+
+        Session session = null;
+
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/tennis?serverTimezone=GMT", "homedeve", "root");
-
-            preparedStatement = conn.prepareStatement("INSERT INTO JOUEUR (NOM,PRENOM,SEXE) VALUES(?, ?, ?)");
-
-            preparedStatement.setString(1, joueur.getNom());
-            preparedStatement.setString(2, joueur.getPrenom());
-            preparedStatement.setString(3, joueur.getSexe().toString());
-
-            preparedStatement.executeUpdate();
-
-            System.out.println("Joueur créé");
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-
-            try {
-                if(conn!=null) conn.rollback();
-
-            } catch (SQLException ex) {
-                ex.printStackTrace();
-            }
-        } finally {
-            try {
-                if(conn!=null) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
+            //recuperation d'une session hibernate
+            session = HibernateUtil.getSessionFactory().openSession();
+            //recuperation d'une ligne et transformation en objet
+            joueur = session.get(Joueur.class, id);
+            System.out.println("Joueur lu");
+        }
+        catch (Throwable t){
+            t.printStackTrace();
+        }
+        finally {
+            if (session != null) {
+                session.close();
             }
         }
 
@@ -119,49 +107,24 @@ public class JoueurRepositoryImpl {
     }
 
     public Joueur getById(Long id) {
-        Connection conn = null;
 
         Joueur joueur = null;
 
-        PreparedStatement preparedStatement = null;
+        Session session = null;
+
         try {
-            preparedStatement = conn.prepareStatement("SELECT NOM, PRENOM, SEXE FROM JOUEUR WHERE ID=?");
-
-
-            preparedStatement.setLong(1, id);
-
-            ResultSet rs = preparedStatement.executeQuery();
-
-            if (rs.next()) {
-                joueur = new Joueur();
-
-                joueur.setId(id);
-                joueur.setNom(rs.getString("NOM"));
-                joueur.setPrenom(rs.getString("PRENOM"));
-                joueur.setSexe(rs.getString("SEXE").charAt(0));
-            }
-
-
-            System.out.println("Selection ok");
-            return joueur;
-
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-
-            try {
-                if(conn!=null) conn.rollback();
-
-            } catch (SQLException ex) {
-                ex.printStackTrace();
-            }
-        } finally {
-            try {
-                if(conn!=null) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
+           //recuperation d'une session hibernate
+            session = HibernateUtil.getSessionFactory().openSession();
+            //recuperation d'une ligne et transformation en objet
+            joueur = session.get(Joueur.class, id);
+            System.out.println("Joueur lu");
+        }
+        catch (Throwable t){
+          t.printStackTrace();
+        }
+        finally {
+            if (session != null) {
+                session.close();
             }
         }
 

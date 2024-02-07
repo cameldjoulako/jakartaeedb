@@ -1,6 +1,12 @@
 package com.homedeve.tenis.core.entity;
 
+import jakarta.persistence.*;
+
+@Entity
+//@Table(name = "JOUEUR")//QUAND LE NOM DE LA TABLE EST DIFFERENT DU NOM DE LA CLASSE
 public class Joueur {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nom;
     private String prenom;
