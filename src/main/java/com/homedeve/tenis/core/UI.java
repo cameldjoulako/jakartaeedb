@@ -7,7 +7,9 @@ public class UI {
         JoueurController controller = new JoueurController();
         //controller.afficheDetailsJoueur();
 
-        controller.creerJoueur();
+        //controller.creerJoueur();
+
+        controller.renommeJoueur();
     }
 }
 

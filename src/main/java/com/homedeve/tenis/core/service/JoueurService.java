@@ -18,7 +18,8 @@ public class JoueurService {
         joueurRepository.create(joueur);
     }
 
-    public void renomme(long identifiant, String nom) {
+    public void renomme(long id, String nom) {
+        joueurRepository.renome(id, nom);
     }
 
     public void changeSexe(long identifiant, char sexe) {
