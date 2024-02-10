@@ -16,7 +16,6 @@ public class JoueurRepositoryImpl {
         Session session = null;
         Transaction tx = null;
 
-
         try {
             //recuperation d'une session hibernate
             session = HibernateUtil.getSessionFactory().openSession();
@@ -119,37 +118,18 @@ public class JoueurRepositoryImpl {
 
 
     public void delete(Long id) {
-        Connection conn = null;
 
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = conn.prepareStatement("DELETE FROM JOUEUR WHERE ID=?");
+        Joueur joueur = null;
+
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        joueur = session.get(Joueur.class, id);
+
+         session.delete(joueur);
 
 
-            preparedStatement.setLong(1, id);
+        System.out.println("Joueur supprimer ! ");
 
-            preparedStatement.executeUpdate();
 
-            System.out.println("Joueur Delete");
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-
-            try {
-                if(conn!=null) conn.rollback();
-
-            } catch (SQLException ex) {
-                ex.printStackTrace();
-            }
-        } finally {
-            try {
-                if(conn!=null) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
 
     }
 

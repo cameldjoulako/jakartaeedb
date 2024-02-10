@@ -1,7 +1,10 @@
 package com.homedeve.tenis.core.service;
 
+import com.homedeve.tenis.core.HibernateUtil;
 import com.homedeve.tenis.core.entity.Joueur;
 import com.homedeve.tenis.core.repository.JoueurRepositoryImpl;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 public class JoueurService {
     private JoueurRepositoryImpl joueurRepository;
@@ -25,6 +28,36 @@ public class JoueurService {
     public void changeSexe(long identifiant, char sexe) {
     }
 
-    public void deleteJoueur(long identifiant) {
+    public void deleteJoueur(long id) {
+        Session session = null;
+
+        Transaction tx = null;
+
+        try {
+            session = HibernateUtil.getSessionFactory().getCurrentSession();
+            tx = session.beginTransaction();
+
+            joueurRepository.delete(id);
+
+
+            tx.commit();
+
+            System.out.println("supp ok ");
+        }
+        catch (Exception t){
+
+            if (tx!=null) {
+                tx.rollback();
+            }
+            t.printStackTrace();
+        }
+        finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+
+
+
     }
 }

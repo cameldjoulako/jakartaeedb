@@ -9,7 +9,11 @@ public class UI {
 
         //controller.creerJoueur();
 
-        controller.renommeJoueur();
+        //controller.renommeJoueur();
+
+        controller.supprimeJoueur();
+
+
     }
 }
 
