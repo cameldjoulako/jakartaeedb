@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e43f690-1c46-4e1e-9b4b-41c459d1a01f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/entity/Epreuve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/entity/Tournoi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/repository/JoueurRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/repository/JoueurRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/service/JoueurService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/service/JoueurService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +51,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.homedeve.tenis.core.entity" />
       <recent name="com.homedeve.tenis.core.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -120,7 +120,7 @@
       <workItem from="1704904628796" duration="718000" />
       <workItem from="1707087539236" duration="7776000" />
       <workItem from="1707274357948" duration="6975000" />
-      <workItem from="1707307362501" duration="13279000" />
+      <workItem from="1707307362501" duration="17092000" />
     </task>
     <servers />
   </component>
