@@ -45,4 +45,12 @@ public class Epreuve {
     public void setTypeEpreuve(Character typeEpreuve) {
         TypeEpreuve = typeEpreuve;
     }
+
+    public String getNom() {
+        return null;
+    }
+
+    public String getPrenom() {
+        return null;
+    }
 }

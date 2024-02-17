@@ -5,10 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e43f690-1c46-4e1e-9b4b-41c459d1a01f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/entity/Epreuve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/entity/Tournoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/controller/EpreuveController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/controller/MatchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/controller/MatchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/controller/ScoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/controller/TournoiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/dto/EpreuveFullDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/dto/EpreuveLightDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/dto/JoueurDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/dto/MatchDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/dto/ScoreFullDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/entity/Match.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/repository/EpreuveRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/repository/MatchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/service/EpreuveService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/entity/Epreuve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/entity/Epreuve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/entity/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/entity/Joueur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/entity/Tournoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/entity/Tournoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/repository/JoueurRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/repository/JoueurRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/service/JoueurService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/homedeve/tenis/core/service/JoueurService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,25 +52,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/workspace/Java/core/src/main/java/com/homedeve/tenis/core&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/workspace/Java/core/src/main/java/com/homedeve/tenis/core/controller",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.homedeve.tenis.core.repository" />
       <recent name="com.homedeve.tenis.core.entity" />
+      <recent name="com.homedeve.tenis.core.dto" />
+      <recent name="com.homedeve.tenis.core.controller" />
       <recent name="com.homedeve.tenis.core.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\Java\core\src\main\java\com\homedeve\tenis\core\controller" />
       <recent name="D:\workspace\Java\core\src\main\java\com\homedeve\tenis\core" />
       <recent name="D:\workspace\Java\core\src\main\resources" />
     </key>
@@ -120,7 +140,8 @@
       <workItem from="1704904628796" duration="718000" />
       <workItem from="1707087539236" duration="7776000" />
       <workItem from="1707274357948" duration="6975000" />
-      <workItem from="1707307362501" duration="17092000" />
+      <workItem from="1707307362501" duration="21467000" />
+      <workItem from="1708080467320" duration="12005000" />
     </task>
     <servers />
   </component>

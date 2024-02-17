@@ -4,9 +4,9 @@ import com.homedeve.tenis.core.HibernateUtil;
 import com.homedeve.tenis.core.entity.Joueur;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class JoueurRepositoryImpl {
@@ -159,15 +159,20 @@ public class JoueurRepositoryImpl {
     }
 
     public List<Joueur> list(Long id) {
-        Connection conn = null;
 
-        Joueur joueur = null;
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        Query<Joueur> query =  session.createQuery("select j from Joueur j", Joueur.class );
+        List<Joueur> joueurs = query.getResultList();
+        /*ransaction tx = null;
+        Connection conn = null;*/
+
+       /* Joueur joueur = null;
 
         List<Joueur> joueurs = new ArrayList<>();
 
-        PreparedStatement preparedStatement = null;
-        try {
-            preparedStatement = conn.prepareStatement("SELECT * FROM JOUEUR");
+        PreparedStatement preparedStatement = null;*/
+        /*try {
+            *//*preparedStatement = conn.prepareStatement("SELECT * FROM JOUEUR");
 
             ResultSet rs = preparedStatement.executeQuery();
 
@@ -180,33 +185,27 @@ public class JoueurRepositoryImpl {
 
                 joueurs.add(joueur);
 
-            }
+            }*//*
 
 
             System.out.println("Joueurs lu");
             return joueurs;
 
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-
-            try {
-                if(conn!=null) conn.rollback();
-
-            } catch (SQLException ex) {
-                ex.printStackTrace();
-            }
         } finally {
-            try {
+            *//*try {
                 if(conn!=null) {
                     conn.close();
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
-            }
-        }
+            }*//*
+        }*/
 
         return joueurs;
     }
 
+    public List<Joueur> list() {
+        return null;
+    }
 }

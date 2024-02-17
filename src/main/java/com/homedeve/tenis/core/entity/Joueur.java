@@ -43,4 +43,8 @@ public class Joueur {
     public void setSexe(Character sexe) {
         this.sexe = sexe;
     }
+
+    public Joueur getFinaliste() {
+        return null;
+    }
 }
